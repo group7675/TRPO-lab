@@ -1,0 +1,75 @@
+object InfoForm: TInfoForm
+  Left = 0
+  Top = 0
+  Caption = 'InfoForm'
+  ClientHeight = 570
+  ClientWidth = 863
+  Color = clGrayText
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Menu = MainMenu1
+  Position = poScreenCenter
+  Scaled = False
+  TextHeight = 15
+  object Image1: TImage
+    Left = 0
+    Top = 508
+    Width = 863
+    Height = 62
+    Align = alBottom
+    ExplicitLeft = -8
+    ExplicitTop = 534
+  end
+  object WebBrowser1: TWebBrowser
+    Left = 0
+    Top = 0
+    Width = 863
+    Height = 508
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 8
+    ExplicitTop = -144
+    ExplicitWidth = 939
+    ExplicitHeight = 590
+    ControlData = {
+      4C00000032590000813400000000000000000000000000000000000000000000
+      000000004C000000000000000000000001000000E0D057007335CF11AE690800
+      2B2E126208000000000000004C0000000114020000000000C000000000000046
+      8000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000100000000000000000000000000000000000000}
+  end
+  object Button1: TButton
+    Left = 392
+    Top = 544
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object MainMenu1: TMainMenu
+    Left = 200
+    Top = 136
+    object N1: TMenuItem
+      Caption = #1052#1077#1085#1102
+      object N3: TMenuItem
+        Caption = #1044#1077#1088#1077#1074#1086
+        OnClick = N3Click
+      end
+      object N4: TMenuItem
+        Caption = #1054#1073' '#1072#1074#1090#1086#1088#1077
+        OnClick = N4Click
+      end
+      object N5: TMenuItem
+        Caption = #1042#1099#1081#1090#1080
+        OnClick = N5Click
+      end
+    end
+    object N2: TMenuItem
+      Caption = #1057#1087#1088#1072#1074#1082#1072
+    end
+  end
+end

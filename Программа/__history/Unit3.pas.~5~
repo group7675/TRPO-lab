@@ -1,0 +1,63 @@
+unit Unit3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.pngimage,
+  Vcl.ExtCtrls;
+
+type
+  TThree = class(TForm)
+    Image1: TImage;
+    ListBox1: TListBox;
+    ListBox2: TListBox;
+    ListBox4: TListBox;
+    rvxv: TListBox;
+    ListBox3: TListBox;
+    ListBox5: TListBox;
+    ListBox6: TListBox;
+    ListBox7: TListBox;
+    ListBox8: TListBox;
+    ListBox9: TListBox;
+    ListBox10: TListBox;
+    ListBox11: TListBox;
+    ListBox12: TListBox;
+    ListBox13: TListBox;
+    ListBox14: TListBox;
+    ListBox15: TListBox;
+    ListBox16: TListBox;
+    ListBox17: TListBox;
+    ListBox18: TListBox;
+    ListBox19: TListBox;
+    ListBox20: TListBox;
+    ListBox21: TListBox;
+    ListBox22: TListBox;
+    ListBox23: TListBox;
+    ListBox24: TListBox;
+    ListBox27: TListBox;
+    ListBox28: TListBox;
+    ListBox29: TListBox;
+    ListBox30: TListBox;
+    ListBox31: TListBox;
+    ListBox32: TListBox;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Three: TThree;
+
+implementation
+
+{$R *.dfm}
+
+procedure TThree.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Application.Terminate;
+end;
+
+end.

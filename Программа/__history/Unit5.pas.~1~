@@ -1,0 +1,63 @@
+unit Unit5;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.OleCtrls, SHDocVw, Vcl.StdCtrls,
+  Vcl.ExtCtrls, Vcl.Menus;
+
+type
+  TInfoForm = class(TForm)
+    WebBrowser1: TWebBrowser;
+    Image1: TImage;
+    Button1: TButton;
+    MainMenu1: TMainMenu;
+    N1: TMenuItem;
+    N3: TMenuItem;
+    N4: TMenuItem;
+    N5: TMenuItem;
+    N2: TMenuItem;
+    procedure Button1Click(Sender: TObject);
+    procedure N3Click(Sender: TObject);
+    procedure N4Click(Sender: TObject);
+    procedure N5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  InfoForm: TInfoForm;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit2,Unit3,Unit4;
+
+procedure TInfoForm.Button1Click(Sender: TObject);
+begin
+  InfoForm.Hide;
+  Three.Show;
+end;
+
+procedure TInfoForm.N3Click(Sender: TObject);
+begin
+  InfoForm.Hide;
+  Three.Show;
+end;
+
+procedure TInfoForm.N4Click(Sender: TObject);
+begin
+  InfoForm.Hide;
+  Author.Show;
+end;
+
+procedure TInfoForm.N5Click(Sender: TObject);
+begin
+  Application.Terminate
+end;
+
+end.
